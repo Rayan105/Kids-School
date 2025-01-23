@@ -10,6 +10,7 @@
 body {
     margin: 0px 140px;
 }
+
 /* nav styles */
 
 .logo {
@@ -87,6 +88,35 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* marquee */
+.marquee-container {
+    width: 1440px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.marquee-content {
+    position: absolute;
+    width: auto;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+        /* Start offscreen to the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* End offscreen to the left */
+    }
+}
+
 
 /* banner section */
 
@@ -193,6 +223,7 @@ body {
 .kinder {
     width: 367px;
     height: 476px;
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
     text-align: center;
     border-radius: 19px;
     box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
@@ -208,6 +239,7 @@ body {
 .elementary {
     width: 367px;
     height: 476px;
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
     text-align: center;
     border-radius: 19px;
     box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
@@ -223,6 +255,7 @@ body {
 .middle {
     width: 367px;
     height: 476px;
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
     text-align: center;
     border-radius: 19px;
     box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
@@ -238,14 +271,15 @@ body {
 
 /* arrow */
 
-.arrow-design{
+.arrow-design {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 40px;
 }
-.arrow{
+
+.arrow {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -264,6 +298,10 @@ body {
 
 /* our stories */
 
+
+.stories-bg{
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
 .stories-container {
     width: 1160px;
     height: 630px;
@@ -279,14 +317,18 @@ body {
     border-radius: 16px;
     background-color: white;
 }
-.img1, .img2{
+
+.img1,
+.img2 {
     border-radius: 16px 16px 0px 0px;
     margin-bottom: -25px;
 }
-.img2{
+
+.img2 {
     margin-bottom: -40px;
 }
-.box{
+
+.box {
     width: 290px;
     height: 301px;
     border-radius: 16px;
@@ -301,7 +343,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px
-
 }
 
 .story1-tittle {
@@ -309,6 +350,7 @@ body {
     font-size: 1.5rem;
     padding: 20px 38px 30px;
 }
+
 .story2-tittle {
     font-weight: 700;
     font-size: 1rem;
@@ -332,9 +374,10 @@ body {
     color: #FFFFFF;
     border: none;
     border-radius: 47px;
-    margin-left: 30px; 
+    margin-left: 30px;
     cursor: pointer;
 }
+
 .btn2 {
     width: 174px;
     height: 38px;
@@ -347,6 +390,7 @@ body {
     margin-left: 30px;
     cursor: pointer;
 }
+
 .btn3 {
     width: 174px;
     height: 38px;
@@ -359,6 +403,7 @@ body {
     margin-left: 30px;
     cursor: pointer;
 }
+
 .btn4 {
     width: 174px;
     height: 38px;
@@ -371,6 +416,7 @@ body {
     margin-left: 30px;
     cursor: pointer;
 }
+
 .btn5 {
     width: 174px;
     height: 38px;
@@ -392,36 +438,79 @@ body {
     background-color: black;
     color: white;
     border-radius: 12px;
-    margin: 70px 680px;
+    margin: 70px 700px;
     cursor: pointer;
-    
+
 }
-
-
-
-
-
-
-
 
 
 /* footer */
-.footer-container{
+.footer-container {
     background-color: #01ACFD;
-    /* margin: auto 0px; */
-    padding: 123px 228px 174px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: -140px;
+    margin-right: -140px;
+    padding: 123px 380px 140px;
 }
+
+.img-text {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.education {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.part1-text {
+    width: 400px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+
+.part2-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.part3-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.part2 a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 
 /* mobile responsive */
 @media screen and (max-width:576px) {
-    .logo {
-        display: inline;
-    }
 
     .school-text,
     .nav-item,
-    .nav-btn {
+    .nav-btn,
+    .arrow-design,
+    .div1 {
         display: none;
     }
 
@@ -431,14 +520,18 @@ body {
         text-align: center;
     }
 
-    .banner-items {
-        max-width: 100%;
+    .banner-image,
+    .banner-items,
+    .cards,
+    .div2 {
+        max-width: 80%;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .banner-image {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+
+
 
 
 
