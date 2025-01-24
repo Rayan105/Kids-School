@@ -88,6 +88,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+.menu{
+    display: none;
+}
 
 /* marquee */
 .marquee-container {
@@ -185,7 +188,7 @@ body {
     width: 100%;
     height: 57px;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-top: 60px;
 
 }
@@ -294,9 +297,6 @@ body {
 }
 
 
-
-
-
 /* our stories */
 
 
@@ -316,6 +316,16 @@ body {
     margin-top: 60px;
     /* margin-left: 375px; */
     border: 1px solid red;
+}
+.stories-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 57px;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 60px;
 }
 
 .div1 {
@@ -515,6 +525,7 @@ body {
     body {
         margin: 0px 16px;
     }
+
     .school-text,
     .nav-item,
     .nav-btn,
@@ -522,43 +533,73 @@ body {
     .div1 {
         display: none;
     }
-    .standard-text {
-        text-align: center;
-        width: 460px;
-        height: 57px;
-        font-weight: 700;
-        font-size: 2.5rem;
+    .menu{
+        display: block;
     }
-    .stories-bg {
-        background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-        /* margin-left: -140px;
-        margin-right: -140px; */
-        border: 1px solid red;
-        justify-items: center;
-    }
+
+    /* banner */
 
     .banner {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
-
+    .banner-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
     .banner-image,
     .banner-items,
     .cards {
-        max-width: 80%;
         margin-bottom: 20px;
         display: grid;
         flex-direction: column;
         align-items: center;
         grid-template-columns: repeat(1, 1fr);
     }
+    .banner-tittle {
+        width: 357px;
+        height: 120px;
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin: 0 auto;
+    }
+    .banner-description {
+        font-weight: 500;
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
 
+    /* standard curriculum */
+
+    .standard-text {
+        text-align: center;
+        width: 380px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    /* our stories */
+
+    .stories-bg {
+        background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+        border: 1px solid red;
+        justify-items: center;
+    }
+    .stories-text{
+        font-size: 2rem;
+    }
     .div2 {
-        max-width: 80%;
+        max-width: 200%;
         margin-bottom: 20px;
         display: grid;
+        gap: 20px;
         flex-direction: column;
+        justify-content: center;
+        margin-left: 350px;
         grid-template-columns: repeat(2, 1fr);
     }
 
